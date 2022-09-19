@@ -1,0 +1,171 @@
+body {
+  background: #100F0F;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  color: #5b5b5b;
+}
+
+#title {
+  padding-top: 3%;
+}
+
+#expertise,
+#projects {
+  padding: 5rem 0;
+}
+
+/* Title Section */
+.nav-item {
+  font-size: 1.5rem;
+  animation-name: nav-animation;
+  animation-duration: 3s;
+}
+
+.heading {
+  padding: 6rem 0;
+}
+
+.title-text {
+  color: #5b5b5b;
+  animation-name: title-animation;
+  animation-duration: 1s;
+  line-height: 1.5;
+  padding-top: 5rem
+}
+
+.hire-resume-button {
+  animation-name: hire-resume-button-animation;
+  animation-duration: 4s;
+}
+
+.developer-image {
+  height: 16rem;
+  width: 16rem;
+  animation-name: developer-img;
+  animation-duration: 1s;
+}
+
+.developer-image:hover {
+  opacity: 0.5;
+}
+
+/* Skill Section */
+.skill-img {
+  height: 5rem;
+  width: 5rem;
+  margin: 20px;
+  animation-name: skills-icon-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.skill-img:hover {
+  opacity: 0.5;
+}
+
+/* Project Section */
+.project-img {
+  height: 8rem;
+  width: 15rem;
+  margin-bottom: 5px;
+  animation-name: project-img-animation;
+  animation-duration: 1s;
+}
+
+.url-text {
+  text-decoration: none;
+  color: #5b5b5b;
+}
+
+.url-text:hover {
+  color: #5b5b5b;
+}
+
+.project-img:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 991px) {
+  .project-img {
+    height: 7rem;
+    width: 12rem;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .skill-img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .developer-image {
+    height: 15.5rem;
+    width: 15.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .developer-image {
+    margin-top: 50px;
+  }
+
+  .heading {
+    padding: 0;
+  }
+
+  .center-image, .title-text {
+    text-align: center;
+  }
+
+  .hire-resume-button {
+    margin-top: 20px;
+  }
+}
+
+/* @media (max-width: 718px) { */
+/* .center-image, .title-text {
+        text-align: center;
+    } */
+/* } */
+@keyframes title-animation {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateX(0PX);
+  }
+}
+
+@keyframes developer-img {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@keyframes nav-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes hire-resume-button-animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
