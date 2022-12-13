@@ -5,6 +5,10 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+h1, .title-text {
+  color: #5b5b5b;
+}
+
 #title {
   padding-top: 3%;
 }
@@ -46,7 +50,6 @@ body:hover > #trailer {
 }
 
 .title-text {
-  color: #5b5b5b;
   animation-name: title-animation;
   animation-duration: 1s;
   line-height: 1.5;
