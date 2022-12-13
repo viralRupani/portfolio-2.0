@@ -1,9 +1,8 @@
 body {
-  background: #100F0F;
+  background: #000;
   min-height: 100vh;
   margin: 0;
   font-family: 'PT Sans', sans-serif;
-  color: #5b5b5b;
 }
 
 #title {
@@ -13,6 +12,26 @@ body {
 #expertise,
 #projects {
   padding: 5rem 0;
+}
+
+#trailer {
+  height: 20px;
+  width: 20px;
+  background-color: #585858;
+  border-radius: 20px;
+
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+body:hover > #trailer {
+  opacity: 1;
 }
 
 /* Title Section */
@@ -125,11 +144,6 @@ body {
   }
 }
 
-/* @media (max-width: 718px) { */
-/* .center-image, .title-text {
-        text-align: center;
-    } */
-/* } */
 @keyframes title-animation {
   from {
     transform: translateX(-100px);
