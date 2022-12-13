@@ -1,3 +1,11 @@
+
+// loader 
+document.onreadystatechange = function() {
+    if (document.readyState === "complete") {
+        document.querySelector("#loading").style.visibility = 'hidden';
+    }
+}
+
 // Trailer animation 
 
 const trailer = document.getElementById('trailer');
