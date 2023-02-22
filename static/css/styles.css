@@ -153,6 +153,10 @@ body:hover>#trailer {
 }
 
 @media (max-width: 991px) {
+  #trailer {
+    display: none;
+  }
+
   .project-img {
     height: 7rem;
     width: 12rem;
