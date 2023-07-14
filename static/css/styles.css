@@ -36,24 +36,8 @@ h1,
 
 #expertise,
 #projects {
-  padding: 5rem 0;
+  padding: 5.5rem 0;
 }
-
-/* #trailer {
-  height: 20px;
-  width: 20px;
-  background-color: #585858;
-  border-radius: 20px;
-
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 100;
-
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 500ms ease;
-} */
 
 #trailer {
   height: 200px;
@@ -83,14 +67,44 @@ body:hover>#trailer {
 }
 
 /* Title Section */
-.nav-item {
-  font-size: 1.5rem;
-  animation-name: nav-animation;
-  animation-duration: 3s;
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: nav-animation 1.5s;
+}
+
+nav>ul {
+  background-color: rgba(53, 53, 53, 0.4);
+  backdrop-filter: blur(20px) saturate(3);
+  border-radius: 100px;
+  padding: 1rem;
+  color: white;
+  font-weight: 100;
+}
+
+nav li {
+  margin: 0 8px;
+  letter-spacing: 1.4px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: white;
 }
 
 .heading {
-  padding: 6rem 0;
+  padding: 10rem 0;
 }
 
 .title-text {
@@ -162,9 +176,6 @@ body:hover>#trailer {
     width: 12rem;
   }
 
-  .nav-item {
-    text-align: center;
-  }
 
   .skill-img {
     height: 4rem;
