@@ -11,6 +11,10 @@ h1,
   animation: profile-animation 3s;
 }
 
+button {
+  letter-spacing: 2px;
+}
+
 /* #loading {
   position: fixed;
   display: block;
@@ -176,6 +180,10 @@ nav a:hover {
   .developer-image {
     height: 15.5rem;
     width: 15.5rem;
+  }
+
+  header {
+    margin-top: 15px;
   }
 }
 
