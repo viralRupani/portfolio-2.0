@@ -11,7 +11,7 @@ h1,
   animation: profile-animation 3s;
 }
 
-#loading {
+/* #loading {
   position: fixed;
   display: block;
   width: 100%;
@@ -22,7 +22,7 @@ h1,
   text-align: center;
   background-color: #000;
   z-index: 10000;
-}
+} */
 
 #loading-img {
   margin-top: 17rem;
