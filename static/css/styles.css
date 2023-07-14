@@ -8,6 +8,7 @@ body {
 h1,
 .title-text {
   color: #5b5b5b;
+  animation: profile-animation 3s;
 }
 
 #loading {
@@ -57,9 +58,6 @@ h1,
   pointer-events: none;
   opacity: 0;
   transition: opicity 500ms ease;
-
-  /* animation  */
-  /* animation: rotate 2s infinite; */
 }
 
 body:hover>#trailer {
@@ -77,7 +75,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: nav-animation 1.5s;
+  animation: profile-animation 1s;
 }
 
 nav>ul {
@@ -108,22 +106,20 @@ nav a:hover {
 }
 
 .title-text {
-  animation-name: title-animation;
-  animation-duration: 1s;
+  animation-name: profile-animation;
+  animation-duration: 3s;
   line-height: 1.5;
   padding-top: 5rem
 }
 
 .hire-resume-button {
-  animation-name: hire-resume-button-animation;
-  animation-duration: 4s;
+  animation: profile-animation 3s;
 }
 
 .developer-image {
   height: 16rem;
   width: 16rem;
-  animation-name: developer-img;
-  animation-duration: 1s;
+  animation: profile-animation 3s;
 }
 
 .developer-image:hover {
@@ -135,9 +131,6 @@ nav a:hover {
   height: 5rem;
   width: 5rem;
   margin: 20px;
-  animation-name: skills-icon-animation;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
 }
 
 .skill-img:hover {
@@ -149,8 +142,6 @@ nav a:hover {
   height: 8rem;
   width: 15rem;
   margin-bottom: 5px;
-  animation-name: project-img-animation;
-  animation-duration: 1s;
 }
 
 .url-text {
@@ -207,27 +198,7 @@ nav a:hover {
   }
 }
 
-@keyframes title-animation {
-  from {
-    transform: translateX(-100px);
-  }
-
-  to {
-    transform: translateX(0PX);
-  }
-}
-
-@keyframes developer-img {
-  from {
-    transform: scale(0)
-  }
-
-  to {
-    transform: scale(1)
-  }
-}
-
-@keyframes nav-animation {
+@keyframes profile-animation {
   from {
     opacity: 0;
   }
@@ -235,20 +206,4 @@ nav a:hover {
   to {
     opacity: 100;
   }
-}
-
-@keyframes hire-resume-button-animation {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 100;
-  }
-}
-
-@keyframes rotate {
-  from {}
-
-  to {}
 }
