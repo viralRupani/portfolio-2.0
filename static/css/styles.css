@@ -83,7 +83,7 @@ header {
 }
 
 nav>ul {
-  background-color: rgba(53, 53, 53, 0.4);
+  background-color: rgba(49, 49, 49, 0.4);
   backdrop-filter: blur(20px) saturate(3);
   border-radius: 100px;
   padding: 1rem;
